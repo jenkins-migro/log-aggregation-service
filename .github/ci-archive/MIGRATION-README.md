@@ -65,6 +65,8 @@ Marketplace actions are pinned to immutable commit SHAs:
 | `actions/setup-java` | v4 | `cf277c60eb25467037889841efdb72551f06f6c3` |
 | `actions/upload-artifact` | v4 | `ea165f8d65b6e75b540449e92b4886f43607fa02` |
 
+The workflow also limits the default `GITHUB_TOKEN` to read-only repository contents access with `permissions: contents: read`.
+
 ## Validation
 
 - Run `actionlint .github/workflows/jenkins-migration.yml` to validate workflow syntax.
